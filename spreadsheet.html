@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Daniels Kanepe digital portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniels Kanepe - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet"> 
+</head>
+<body>
+
+<div id="outdated">
+     <h6>Your browser is out-of-date!</h6>
+     <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+<div id="container">
+    <aside>
+        <div id="sidebar-header">
+            <div id="navHeaderName">Daniels Kanepe</div>
+            <div id="navHeaderSub">Portfolio</div>
+        </div>
+        <div id="navSeperator"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="hobbies.html" class="nav-btn">Hobbies</a></li>
+                <li><a href="animations.html" class="nav-btn">Animations</a></li>
+                <li><a href="audio.html" class="nav-btn">Audio</a></li>
+                <li><a href="database.html" class="nav-btn">Database development</a></li>
+                <li id="btnActive"><a href="spreadsheet.html" class="nav-btn">Spreadsheet development</a></li>
+                <li><a href="webdev.html" class="nav-btn">Web development</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
+            </ul>
+        </nav>  <!-- navbar ending -->
+        <div id="socBtns">
+        	<a class="social social-facebook" aria-label="Facebook" target="_blank" href="https://facebook.com/dyanielo"></a>
+        	<a class="social social-linkedin" aria-label="LinkedIn" target="_blank" href="https://linkedin.com"></a>
+        	<a class="social social-twitter" aria-label="Twitter" target="_blank" href="https://twitter.com"></a>
+        </div>
+        <footer>&copy;<a href="https://www.gov.uk/copyright/<footer>&copy;<a href="https://www.gov.uk/copyright/overview" target="_blank">Copyrighted</a> by <span>Daniels Kanepe</span></footer>
+    </aside> <!-- sidebar ending -->
+    <div id="containerChild">
+        <header>
+            <img id="profilePic" src="img/profile_picture.png" alt="My face"></img>
+            <h1 id="aboutName">Daniels Kanepe</h1>
+            <div class="sexyLine"></div>
+            <span id="aboutText">Hey, how are you? My name is Daniels Kanepe and I study IT. Here, have a look at some of my works. To contact me, head on to the contact page.</span>
+            <div class="sexyLine"></div>
+        </header>
+        <main id="letter">
+            <div id="note-container">
+              <div id="note">
+                <span id="pin" aria-label="push-pin"></span>
+                <span id="note-header">Spreadsheet development</span>
+                <span id="note-content">Here you will find everything from unit 9</span>
+              </div> <!-- note ending -->
+            </div> <!-- note container ending -->
+            <p id="mainText">Dear Friends, Elf and Yoli are two smart, loving sisters. Elf is a world-renowned pianist, glamorous, wealthy, happily married: she wants to die. Yoli is divorced, broke, sleeping with the wrong men: she desperately wants to keep her older sister alive. When Elf's latest suicide attempt leaves her hospitalised weeks before her highly anticipated world tour, Yoli is forced to confront the impossible question of whether it is better to let a loved one go. All My Puny Sorrows does a sterling job of turning a tragic situation into an utterly absorbing and enrapturing book.</p>
+            <div id="download-table-container">
+                <table id="download-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Grade</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Assignment - B</td>
+                            <td><img src="img/icons/star3.png" class="rating"/></td>
+                            <td><a href="content/9-B.zip" download="Unit 9 B - Daniels Kanepe.zip" class="blue"><div class="downloadIco"></div>Download here</a></td>
+                        </tr>
+                        <tr>
+                            <td>Assignment - C</td>
+                            <td><img src="img/icons/star3.png" class="rating"/></td>
+                            <td><a href="content/9-C.zip" download="Unit 10 C - Daniels Kanepe.zip" class="blue"><div class="downloadIco"></div>Download here</a></td>
+                        </tr>
+                        <tr>
+                            <td>Assignment - D</td>
+                            <td><img src="img/icons/star3.png" class="rating"/></td>
+                            <td><a href="content/9-D.zip" download="Unit 10 D - Daniels Kanepe.zip" class="blue"><div class="downloadIco"></div>Download here</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Grades in stars: D = 3/3, M = 2/3, P = 1/3, Fail = 0/3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div> <!-- content ending -->
+</div> <!-- container ending -->
+
+<script src="js/jquery.js"></script>
+<script src="js/outdatedbrowser.min.js"></script> <!-- Outdated browser javascript -->
+<script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+</body>
+</html>

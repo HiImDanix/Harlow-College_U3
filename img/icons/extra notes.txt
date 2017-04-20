@@ -1,0 +1,1 @@
+The icons had transparent body which was not what I wanted so I resaved without transparency to make it white and erased the white to make it transparent.

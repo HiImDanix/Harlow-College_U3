@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Daniels Kanepe digital portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniels Kanepe - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet"> 
+</head>
+<body>
+
+<div id="outdated">
+     <h6>Your browser is out-of-date!</h6>
+     <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+<div id="container">
+    <aside>
+        <div id="sidebar-header">
+            <div id="navHeaderName">Daniels Kanepe</div>
+            <div id="navHeaderSub">Portfolio</div>
+        </div>
+        <div id="navSeperator"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="hobbies.html" class="nav-btn">Hobbies</a></li>
+                <li><a href="animations.html" class="nav-btn">Animations</a></li>
+                <li><a href="audio.html" class="nav-btn">Audio</a></li>
+                <li><a href="database.html" class="nav-btn">Database development</a></li>
+                <li><a href="spreadsheet.html" class="nav-btn">Spreadsheet development</a></li>
+                <li><a href="webdev.html" class="nav-btn">Web development</a></li>
+                <li id="btnActive"><a href="contact.html" class="nav-btn">Contact</a></li>
+            </ul>
+        </nav>  <!-- navbar ending -->
+        <div id="socBtns">
+        	<a class="social social-facebook" aria-label="Facebook" target="_blank" href="https://facebook.com/dyanielo"></a>
+        	<a class="social social-linkedin" aria-label="LinkedIn" target="_blank" href="https://linkedin.com"></a>
+        	<a class="social social-twitter" aria-label="Twitter" target="_blank" href="https://twitter.com"></a>
+        </div>
+        <footer>&copy;<a href="https://www.gov.uk/copyright/overview" target="_blank">Copyrighted</a> by <span>Daniels Kanepe</span></footer></footer>
+    </aside> <!-- sidebar ending -->
+    <div id="containerChild">
+        <header>
+            <img id="profilePic" src="img/profile_picture.png" alt="My face"></img>
+            <h1 id="aboutName">Daniels Kanepe</h1>
+            <div class="sexyLine"></div>
+            <span id="aboutText">Hey, how are you? My name is Daniels Kanepe and I study IT. Here, have a look at some of my works. To contact me, head on to the contact page.</span>
+            <div class="sexyLine"></div>
+        </header>
+        <main id="contactLetter">
+            <div class="innerLetter">
+                <form id="formContainer" method="POST" action="#contact_parser.php">
+                    <div id="note-containerForm">
+                      <div id="note">
+                        <span id="pin" aria-label="push-pin"></span>
+                        <span id="note-header">Contact Me</span>
+                        <span id="note-content">Please fill out this form to contact me.</span>
+                      </div> <!-- note ending -->
+                    </div> <!-- note container ending -->
+                        <ul class="noBulletPoints">
+                            <li>
+                                <input type="text" name="name" placeholder="*Name" required class="left field-split field-style" />
+                                <input type="email" name="email" placeholder="*Email" required class="right field-split field-style" />
+                            </li>
+                            <li>
+                                <input type="text" name="website" placeholder="Website" class="left field-split field-style" />
+                                <input type="text" name="budget" placeholder="Budget" class="right field-split field-style" />
+                            </li>
+                            <li>
+                                <input type="text" name="timeline" placeholder="Timeline" class="left field-split field-style" />
+                                <input type="text" name="captcha" placeholder="Captcha" disabled class="right field-split field-style disabled" />
+                            </li>
+                            <li>
+                                <textarea name="message" placeholder="Message" class="field-style textarea"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send Message" />
+                            </li>
+                        </ul>
+                </form>
+            </div>
+        </main>
+    </div> <!-- content ending -->
+</div> <!-- container ending -->
+
+<script src="js/jquery.js"></script>
+<script src="js/outdatedbrowser.min.js"></script> <!-- Outdated browser javascript -->
+<script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+</body>
+</html>
