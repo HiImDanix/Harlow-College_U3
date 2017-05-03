@@ -602,7 +602,7 @@ background-position: -39px -5px;
   color:#D25068;
 }
 .hacky_fix {
-  padding:2% 3% 3% 3%;
+  padding: 2% 3% 3% 3%;
 }
 /*MEDIA QUERIES*/
 @media (max-width: 1216px) {
