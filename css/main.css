@@ -185,7 +185,7 @@ max-width:80%;
 background: #fff;
 box-shadow: 0 0 10px rgba(0,0,0,0.3);
 margin: 75px auto 50px auto;
-min-height: 500px;
+min-height: 350px;
 position: relative;
 width: 95%;
 }
@@ -600,6 +600,12 @@ background-position: -39px -5px;
 }
 .text_red {
   color:#D25068;
+}
+.center {
+  margin:0 auto;
+}
+.text_center {
+  text-align:center;
 }
 .hacky_fix {
   padding: 2% 3% 3% 3%;
