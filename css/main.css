@@ -95,7 +95,11 @@ display: inline-block;
 margin:0 4px 0 4px;
 width:32px;
 height:32px;
-opacity:0.7;
+/*Change opacity to 0.7 when enabled*/
+opacity:0.3;
+/*Disabling social media buttons, remove later*/
+pointer-events: none;
+cursor: default;
 }
 .social:hover {
 opacity:1;
