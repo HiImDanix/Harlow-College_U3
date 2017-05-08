@@ -575,6 +575,8 @@ background-position: -39px -5px;
 .text_table-top {
   text-align:center;
   display:block;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 .video-container {
   width:70%;
