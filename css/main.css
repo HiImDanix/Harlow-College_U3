@@ -613,7 +613,7 @@ background-position: -39px -5px;
   text-align:center;
 }
 .hacky_fix {
-  padding: 2% 3% 3% 3%;
+  padding: 0% 3% 2% 3%;
 }
 /*MEDIA QUERIES*/
 @media (max-width: 1216px) {
